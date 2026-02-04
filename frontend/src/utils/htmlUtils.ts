@@ -14,5 +14,6 @@ export const createHtml = (toPlay: Game[]) => {
     gameTitle.innerHTML = game.title;
 
     gameCard.appendChild(gameTitle);
+    gameContainer?.appendChild(gameCard);
   });
 };

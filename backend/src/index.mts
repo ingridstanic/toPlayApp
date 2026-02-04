@@ -1,7 +1,14 @@
 import express, { json } from "express";
+import cors from "cors";
 import { toPlayRouter } from "./routes/toPlayRouter.mjs";
 
 const app = express();
+
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+  }),
+);
 
 app.use(json());
 

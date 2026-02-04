@@ -2,7 +2,7 @@ import type { Game } from "../models/Game";
 
 export const getGames = async () => {
   try {
-    const reponse = await fetch("http://localhost:3000/toplay");
+    const reponse = await fetch("http://localhost:3000/toplay/");
 
     const data: Game[] = await reponse.json();
 
