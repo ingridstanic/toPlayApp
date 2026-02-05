@@ -94,3 +94,32 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.played {
+  text-decoration: line-through;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+span {
+  width: 150px;
+}
+
+.myButtons {
+  background-color: transparent;
+  width: 10px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -38,7 +38,7 @@ toPlayRouter.post("/", (req, res) => {
     const { title } = req.body;
 
     if (!title) {
-      res.status(400).json({ message: "title is missing" });
+      return res.status(400).json({ message: "title is missing" });
     }
 
     const newGame = new Game(Date.now(), title);
